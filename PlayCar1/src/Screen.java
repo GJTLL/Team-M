@@ -69,4 +69,4 @@ public class Screen extends Canvas implements KeyListener {
 	}
 
 }
-/* github 실험_이재진*/
+// github 이재진
