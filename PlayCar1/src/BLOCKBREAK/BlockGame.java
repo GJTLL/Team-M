@@ -4,8 +4,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+
 public class BlockGame {
-	
+	public static boolean show = false, run = true, ON = false;
+
 	static class MyFrame extends JFrame {
 		
 		//constant : »ó¼ö
@@ -89,6 +91,8 @@ public class BlockGame {
 				
 				drawUI( g2d );
 			}
+			
+			
 			
 			private void drawUI(Graphics2D g2d) {
 				//draw Blocks
@@ -419,8 +423,12 @@ public class BlockGame {
 	}
 	
 	public static void main(String args[]) {
-		new MyFrame("Block Game");
-		new MainFrame();
+		
+		MainFrame frm = new MainFrame();
+		frm.createFrame();
 	}
+	
+	
 
 }
+
